@@ -1,0 +1,79 @@
+html {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+body {
+    background: #f5f5eb;
+}
+
+.container {
+    max-width: 50%;
+    margin: 30px auto;
+}
+
+.memes-title {
+    font-size: 20px;
+    color: rgb(10, 62, 204);
+}
+
+.memes-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.memes-input:checked ~ .memes-content {
+    color: #000;
+    display: flex;
+}
+
+.memes-input:checked ~ .memes-title {
+    color: #000;
+}
+
+.memes-input:checked ~ .memes-button {
+    background: url('../images/accordion-close.svg');
+}
+
+.memes-input:hover ~ .memes-content {
+    display: flex;
+}
+
+.memes-input:hover ~ .memes-button {
+    background: url('../images/accordion-close.svg');
+}
+
+.memes:hover .memes-title {
+    color: #000;
+}
+
+.memes:hover .memes-button {
+    display: block;
+}
+
+.memes-button {
+    display: none;
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 3px;
+    background: url('../images/accordion-open.svg');
+}
+
+.memes-content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.memes-content > img, video {
+    width: 500px;
+}
