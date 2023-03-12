@@ -77,3 +77,33 @@ body {
 .memes-content > img, video {
     width: 500px;
 }
+
+@media (max-width: 1226px) {
+    .memes-title {
+        font-size: 17px;
+    }
+
+    .memes-content > img, video {
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .memes-title {
+        font-size: 15px;
+    }
+
+    .memes-content > img, video {
+        width: 250px;
+    }
+}
+
+@media (max-width: 550px) {
+    .memes-title {
+        font-size: 15px;
+    }
+
+    .memes-content > img, video {
+        width: 150px;
+    }
+}
